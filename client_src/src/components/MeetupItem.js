@@ -10,7 +10,9 @@ class MeetupItem extends Component {
   }
   render(){
     return (
-      <li className="collection-item">{this.state.item.name}</li>
+      <li className="collection-item">
+        <Link to={`/meetups/${this.state.item.id}`}>{this.state.item.name}</Link>
+      </li>
     )
   }
 }
