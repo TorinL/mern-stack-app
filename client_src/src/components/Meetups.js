@@ -22,6 +22,7 @@ class Meetups extends Component{
         this.setState({meetups: response.data}, () =>{
         })
       })
+      .catch(err => console.log(err));
   }
 
   render(){
