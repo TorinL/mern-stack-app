@@ -50,15 +50,15 @@ class EditMeetup extends Component {
        <h1>Add Meetup</h1>
        <form onSubmit={this.onSubmit.bind(this)}>
          <div className="input-field">
-           <input type="text" name="name" ref="name" />
+           <input type="text" name="name" ref="name" value={this.state.name} />
            <label htmlFor="name">Name</label>
          </div>
          <div className="input-field">
-           <input type="text" name="city" ref="city" />
+           <input type="text" name="city" ref="city" value={this.state.city} />
            <label htmlFor="city">City</label>
          </div>
          <div className="input-field">
-           <input type="text" name="address" ref="address" />
+           <input type="text" name="address" ref="address" value={this.state.address} />
            <label htmlFor="address">Address</label>
          </div>
          <input type="submit" value="Save" className="btn" />
